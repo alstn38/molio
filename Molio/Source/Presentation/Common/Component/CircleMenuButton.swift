@@ -13,7 +13,7 @@ final class CircleMenuButton: UIButton {
          buttonSize: CGFloat,
          tintColor: UIColor?,
          buttonImage: UIImage?,
-         buttonImageSize: (width: CGFloat, height: CGFloat)
+         buttonImageSize: CGSize
     ) {
         super.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -45,7 +45,7 @@ final class CircleMenuButton: UIButton {
         addSubview(buttonImageView)
     }
     
-    private func setupConstraint(buttonSize: CGFloat, buttonImageSize: (width: CGFloat, height: CGFloat)) {
+    private func setupConstraint(buttonSize: CGFloat, buttonImageSize: CGSize) {
         NSLayoutConstraint.activate([
             self.widthAnchor.constraint(equalToConstant: buttonSize),
             self.heightAnchor.constraint(equalToConstant: buttonSize)

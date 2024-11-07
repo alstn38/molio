@@ -44,25 +44,25 @@ final class SwipeMusicViewController: UIViewController {
                                                 buttonSize: 58.0,
                                                 tintColor: .white,
                                                 buttonImage: UIImage(systemName: "slider.horizontal.3"),
-                                                buttonImageSize: (21.0, 19.0))
+                                                buttonImageSize: CGSize(width: 21.0, height: 19.0))
     
     private let dislikeButton = CircleMenuButton(backgroundColor: .black.withAlphaComponent(0.2),
                                                  buttonSize: 66.0,
                                                  tintColor: UIColor(hex: "#FF3D3D"),
                                                  buttonImage: UIImage(systemName: "xmark"),
-                                                 buttonImageSize: (25.0, 29.0))
+                                                 buttonImageSize: CGSize(width: 25.0, height: 29.0))
     
     private let likeButton = CircleMenuButton(backgroundColor: .black.withAlphaComponent(0.2),
                                               buttonSize: 66.0,
                                               tintColor: UIColor(resource: .main),
                                               buttonImage: UIImage(systemName: "heart.fill"),
-                                              buttonImageSize: (30.0, 29.0))
+                                              buttonImageSize: CGSize(width: 30.0, height: 29.0))
     
     private let myMolioButton = CircleMenuButton(backgroundColor: .black.withAlphaComponent(0.2),
                                                  buttonSize: 58.0,
                                                  tintColor: UIColor(hex: "#FFFAFA"),
                                                  buttonImage: UIImage(systemName: "music.note"),
-                                                 buttonImageSize: (18.0, 24.0))
+                                                 buttonImageSize: CGSize(width: 18.0, height: 24.0))
     
     override func viewDidLoad() {
         super.viewDidLoad()
